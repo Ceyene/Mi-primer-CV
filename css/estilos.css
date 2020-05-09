@@ -67,7 +67,7 @@ a {
     text-align: center;
 }
 header {
-    margin: 3em 0;
+    margin: 5em 0 2em;
 }
 header h1 {
     text-transform: uppercase;
@@ -75,6 +75,15 @@ header h1 {
     letter-spacing: 0.15em;
     margin: auto;
     display: block;
+}
+
+header h1::after {
+    content: '';
+    display: block;
+    background-color: var(--bordeaux);
+    height: 1px;
+    margin: 0.75em auto;
+    width: 3em;
 }
 
 header p {
