@@ -1,31 +1,3 @@
-/*
-...........................................................
-................._.................__.._...................
-...____._____...(_)__...__..____._/ /_(_)___...___...____..
-../ __  / __ \./ / __  __ \/ __ //  _/ / __ \/ __ \/ ___/.
-./ /_/ / /./ // / /./ /./ / /_/ / /./ / /_/ / /./ (___  ).
-.\__,_/_/./_//_/_/./_/./_/\__,_/\__/_/\____/_/./_/_____/..
-..........................................................
-...............Por Cyn Romero (Ce-y-Ene)..................
- */
-
- .fadeIn{
-     animation-duration: 4s;
-     -webkit-animation-duration: 4s;
-     animation-fill-mode: both; /*ida y regreso*/
-     -webkit-animation-fill-mode: both;
-     animation-name: fadeIn;
-     -webkit-animation-name: fadeIn;
- }
-
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-     }
-     to {
-         opacity: 1;
-     }
- }
 
  .fadeInDown {
     animation-duration: 1s;
@@ -39,8 +11,8 @@
  @keyframes fadeInDown {
     from {
         opacity: 0;
-        -webkit-transform: translate3d(0,-100%,0);
-        transform: translate3d(0,-100%,0);
+        -webkit-transform: translate3d(0,-10%,0);
+        transform: translate3d(0,-10%,0);
     }
     to {
         opacity: 1;
@@ -61,12 +33,40 @@
  @keyframes fadeInUp {
     from {
         opacity: 0;
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
+        -webkit-transform: translate3d(0,10%,0);
+        transform: translate3d(0,10%,0);
     }
     to {
         opacity: 1;
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
     }
+ }
+
+ @media screen and (max-width:980px) {
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-5%,0,0);
+            transform: translate3d(-5%,0,0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+     }
+    
+     @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(5%,0,0);
+            transform: translate3d(5%,0,0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+     }
  }

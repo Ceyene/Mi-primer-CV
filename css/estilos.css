@@ -39,7 +39,7 @@ a {
 .container {
     max-width: calc(100vw - 12em);
     margin: 1.5em auto 0 auto;
-    background-color: var(--white);
+    background-color: transparent;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -61,6 +61,7 @@ a {
 .text-container {
     display: flex;
     width: 50%;
+    background-color: var(--white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
