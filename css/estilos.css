@@ -2,7 +2,7 @@
 
 :root {
     --violet: #A334CD;
-    --lilac: #ECE4EF;
+    --bordeaux: #7E0416;
     --gray: #555555;
     --white: #ffffff;
     --black: #000000;
@@ -12,11 +12,13 @@ html,
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 14pt;
     color:var(--gray);
-    background-color: var(--lilac);
+    background-color: var(--bordeaux);
     line-height: 1.75;
     letter-spacing: 0.05em;
 }
@@ -24,6 +26,8 @@ body {
 ul {
     list-style: none;
     padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 a {
@@ -33,23 +37,23 @@ a {
 
 /*Contenedor general*/
 .container {
-    max-width: calc(100vw - 6em);
-    margin: 2em auto;
+    max-width: calc(100vw - 10em);
+    margin: 2em auto 0 auto;
     background-color: var(--white);
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: stretch;
 }
 /*Fin de contenedor general*/
 
 /*Comienza el Home*/
 .img-container {
     width: 50%;
-    object-fit: cover;
-    overflow: hidden;
+    height: 100%;
 }
+
 .img-container img {
+    display: block;
     width: 100%;
 }
 
@@ -62,13 +66,14 @@ a {
     text-align: center;
 }
 header {
-    margin: 44px 0;
+    margin-bottom: 44px;
 }
 header h1 {
     text-transform: uppercase;
     font-size: 30px;
     letter-spacing: 0.15em;
     margin: auto;
+    display: block;
 }
 
 header p {
@@ -93,11 +98,11 @@ header p,
     margin: 22px;
 }
 .nav li:hover{
-    border-color: var(--violet);
+    border-color: var(--bordeaux);
 }
 
 .nav li a:hover {
-    color: var(--violet);
+    color: var(--bordeaux);
 }
 .social {
     margin-bottom: 30px;
@@ -106,12 +111,14 @@ header p,
 .social a {
     color: var(--gray);
     font-size: 20px;
+    margin: 0 15px;
 }
 .social a:hover {
-    color: var(--violet);
+    color: var(--bordeaux);
 }
 footer {
     text-align: center;
-    margin-top: 22px;
+    margin: 22px;
+    color: var(--white);
 }
 /*Fin del Home*/
