@@ -37,8 +37,8 @@ a {
 
 /*Contenedor general*/
 .container {
-    max-width: calc(100vw - 10em);
-    margin: 2em auto 0 auto;
+    max-width: calc(100vw - 12em);
+    margin: 1.5em auto 0 auto;
     background-color: var(--white);
     text-align: center;
     display: flex;
@@ -54,6 +54,7 @@ a {
 
 .img-container img {
     display: block;
+    min-height: 35em;
     width: 100%;
 }
 
@@ -66,7 +67,7 @@ a {
     text-align: center;
 }
 header {
-    margin-bottom: 44px;
+    margin: 3em 0;
 }
 header h1 {
     text-transform: uppercase;
@@ -78,10 +79,6 @@ header h1 {
 
 header p {
     margin: auto;
-}
-
-.nav {
-    margin-bottom: 30px;
 }
 
 header p,
@@ -105,20 +102,20 @@ header p,
     color: var(--bordeaux);
 }
 .social {
-    margin-bottom: 30px;
+    margin: 3em 0;
     display: flex;
 }
 .social a {
     color: var(--gray);
     font-size: 20px;
-    margin: 0 15px;
+    margin: 0 0.5em;
 }
 .social a:hover {
     color: var(--bordeaux);
 }
 footer {
     text-align: center;
-    margin: 22px;
+    margin: 1em;
     color: var(--white);
 }
 /*Fin del Home*/

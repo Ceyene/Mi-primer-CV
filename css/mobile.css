@@ -1,9 +1,26 @@
-@media screen and (max-width:767px) {
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: calc(100vw - 6em);
+        margin: 1.5em auto 0 auto;
+    }
+    header {
+        margin: 2em;
+    }
+    .social {
+        margin-bottom: 1em;
+    }
+    .social a {
+        margin: 0 0.5em;
+    }
+    
+}
+
+@media screen and (max-width:980px) {
     .container {
         display: inherit;
         height: auto;
-        width: calc(100vw - 2em);
-        margin: 1em auto;
+        max-width: calc(100vw - 3em);
+        margin: 1.5em;
     }
     .img-container {
         width: 100%;
@@ -14,26 +31,33 @@
         height: auto;
     }
     header {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
-    .nav {
-        margin-bottom: 15px;
+    footer {
+        font-size: 0.7em;
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:487px) {
     .container {
-        width: calc(100vw - 1em);
+        width: calc(100vw - 0.5);
         margin: 0.5em auto;
     }
     .img-container {
         height: 10%;
     }
     header {
-        margin-bottom: 10px;
+        margin-bottom: 2em;
     }
-    .nav {
-        margin-bottom: 10px;
+    header h1 {
+        line-height: 1em;
+    }
+    header p {
+        margin-top: 1em;
+        line-height: 1.3em;
+    }
+    .nav ul li {
+        margin: 0.5em;
     }
     .social a {
         margin-right: 5px;
@@ -45,7 +69,7 @@
 
 @media screen and (max-width:320px) {
     .container {
-        width: 95vw;
+        width: 99vw;
         margin: auto;
     }
     header {
